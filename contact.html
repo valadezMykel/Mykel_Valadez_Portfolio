@@ -4,80 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Mykel</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-    <div id="backdrop">
-        
-        <!-- navbar at the top of the page -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <!-- box used to color around my name -->
-            <div id="nav-header-box">
-                <h2>Mykel Valadez</h2>
+<body id="backdrop">
+    <!-- navbar at the top of the page -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- box used to color around my name -->
+        <div id="nav-header-box">
+            <h2>Mykel Valadez</h2>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container d-flex">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="porfolio.html">Porfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                </ul>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="container d-flex">
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="porfolio.html">Porfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">About</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <main class="container">
-            <!-- this row to keep space outlined in wire -->
-            <div class="row">
-                <div class="col spacer"></div>
-            </div>
-            <!-- row containing the Header of my article -->
-            <div class="row" >
-                <div class="col-md-8 mainbox">
-                    <h1>Contact</h1>
+        </div>
+    </nav>
+    <main class="container">
+        <!-- this row to keep space outlined in wire -->
+        <div class="row">
+            <div class="col spacer"></div>
+        </div>
+        <div class="row" >
+            <article class="col-md-8 mainbox">
+                <div class="col-md-8">
+                    <h1>Contact<a href="https://www.linkedin.com/in/mykel-valadez-3b18971b1/" class="fab fa-linkedin icon"></a></h1>
                     <hr>
-                </div>
-                <div class="col invisible"></div>
-            </div>
-            <div class="row" >
-                <article class="col-md-8 mainbox">
-                    <div class="col-md-8">
-                        <div class="form-group">
-                            <label for="name-input">Name</label>
-                            <input type="text" class="form-control" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email-input">Email</label>
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message-area">Message</label>
-                            <!-- <input type="text" class="form-control"> -->
-                            <textarea class="form-control" name="message-area" id="msg" rows="3" placeholder="Message"></textarea>
-                        </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="name-input">Name</label>
+                        <input type="text" class="form-control" placeholder="Name">
                     </div>
+                    <div class="form-group">
+                        <label for="email-input">Email</label>
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-area">Message</label>
+                        <!-- <input type="text" class="form-control"> -->
+                        <textarea class="form-control" name="message-area" id="msg" rows="3" placeholder="Message"></textarea>
+                    </div>
+                </div>
 
-                    <button class="submit-btn " id="contact-enter-btn">Submit</button>
-                </article>
-            </div>
-            <!-- this is to space the main form the bottom -->
-            <div class="row">
-                <div class="col spacer"></div>
-            </div>
-        </main>
-        <footer>
-            @copywrite
-        </footer>
-    </div>
+                <button class="submit-btn " id="contact-enter-btn">Submit</button>
+            </article>
+        </div>
+        <!-- this is to space the main form the bottom -->
+        <div class="row">
+            <div class="col spacer"></div>
+        </div>
+    </main>
+    <footer>
+        <a href="https://github.com/valadezMykel" class="fab fa-github icon"></a>
+        <a href="https://www.linkedin.com/in/mykel-valadez-3b18971b1/" class="fab fa-linkedin icon"></a>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
