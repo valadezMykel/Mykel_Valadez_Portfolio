@@ -88,14 +88,15 @@ img{
     max-height: 350px;
     min-width: 350px;
     /* min-height: 350px; */
-    transform: scale(200%,200%);
+    /* transition-property: scale;
+    transition-duration: 3s; */
     
 }
 
 .porfolio-img:hover{
     cursor: pointer;
-    z-index: 1;
-    
+    z-index: 10;
+    transform: scale(1.5, 1.5);
     
 }
 
