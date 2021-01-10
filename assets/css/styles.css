@@ -1,3 +1,11 @@
+html {
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+}
+ 
+body { position:absolute; top:0; bottom:0; right:0; left:0; }
+
 nav{
     background-color: #2b0e25;
 }
@@ -44,6 +52,8 @@ h1{
     background-size: 500% 500%;
     box-shadow: 0 0 30px 50px rgb(0, 0, 0, .15) inset;
     animation: gradient 15s ease infinite;
+    background-clip: content-box;
+    min-height: 100%;
     
 }
 
@@ -84,20 +94,19 @@ img{
 
 .porfolio-img{
     margin-bottom: 50px;
-    max-width: 350px;
+    max-width: 400px;
     max-height: 350px;
-    min-width: 350px;
-    /* min-height: 350px; */
-    /* transition-property: scale;
-    transition-duration: 3s; */
+    min-width: 400px;
+    min-height: 350px;
+    transition: transform 1s;
+    position: relative;
     
 }
 
 .porfolio-img:hover{
     cursor: pointer;
-    z-index: 10;
-    transform: scale(1.5, 1.5);
-    
+    z-index: 1 !important;
+    transform: scale(1.5, 1.5); 
 }
 
 p{
